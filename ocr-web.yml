@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: web
+
+eureka:
+  client:
+    serviceUrl: 
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    races:
+      url: http://localhost:8282
+    participants:
+      url: http://localhost:8181

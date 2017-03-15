@@ -1,0 +1,11 @@
+server:
+  port: 8282
+
+spring:
+  application:
+    name: races
+
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
